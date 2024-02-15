@@ -1,6 +1,6 @@
 import { Button, Image, Menu, Dropdown, Space, Drawer } from "antd";
 import React, { useEffect, useState } from "react";
-import Logo from "../assets/logo1.png";
+import Logo from "../assets/LionCopy.jpg";
 import Cookies from "js-cookie";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -112,8 +112,8 @@ function AdminNavbar() {
         <div
           className={`w-screen px-20 z-50 fixed border-b shadow-md flex items-center justify-between h-[7.5vh] bg-black`}
         >
-          <div>
-            <Image src={Logo} preview={false} width={100} />
+          <div className="pt-1">
+            <Image src={Logo} preview={false} width={50} />
           </div>
           <div>
             <Button className="!text-white" onClick={handleLogout}>

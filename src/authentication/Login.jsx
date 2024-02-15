@@ -5,7 +5,7 @@ import axios from "axios"
 import {get,isEmpty} from "lodash"
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
-import Logo from "../assets/logo1.png";
+import Logo from "../assets/Lion.jpg"
 import { useDispatch } from "react-redux";
 import { changeUserValues } from "../redux/userSlice";
 
@@ -70,7 +70,7 @@ function Login() {
   return (
     <div className="w-screen h-[100vh] bg-black flex flex-col md:flex-row  items-center justify-between ">
       <div className="text-white border-b-2 md:border-b-0 md:border-r-2 h-[50vh] w-[100vw] md:h-[90vh] border-slate-400 flex items-center justify-center  md:w-[45%]">
-        <img src="https://i.pinimg.com/564x/a5/88/6b/a5886b442041063199a370f196bbbc2c.jpg"  className="w-[25vw] " />
+        <img src={Logo} className="w-[25vw] " />
         <div>
         <p className="text-white pr-8">“Be the change that you wish to see in the world.”</p>
       </div>
@@ -86,6 +86,8 @@ function Login() {
           <div className="text-center">
             <h1 className="text-xl">Welcome</h1>
             <p className="pt-2">Login to admin dashboard</p>
+            <p> Username: admin@Kerala</p>
+            <p> Password: 12345</p>
           </div>
           <Form.Item
             name="name"
