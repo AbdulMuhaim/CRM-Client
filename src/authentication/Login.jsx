@@ -18,6 +18,8 @@ function Login() {
 
   const handleFinish = async (value) => {
     try {
+      console.log("hiiiii");
+      console.log(url);
        const result= await axios.post(`${url}/getuser`,value)
        console.log(result);
        console.log("result");
@@ -67,9 +69,13 @@ function Login() {
 
   return (
     <div className="w-screen h-[100vh] bg-black flex flex-col md:flex-row  items-center justify-between ">
-      <div className="text-white border-b-2 md:border-b-0 md:border-r-2 h-[30vh] w-[100vw] md:h-[70vh] border-slate-400 flex items-center justify-center  md:w-[45%]">
-        <img src={Logo} className="w-[20vw]" />
+      <div className="text-white border-b-2 md:border-b-0 md:border-r-2 h-[50vh] w-[100vw] md:h-[90vh] border-slate-400 flex items-center justify-center  md:w-[45%]">
+        <img src="https://i.pinimg.com/564x/a5/88/6b/a5886b442041063199a370f196bbbc2c.jpg"  className="w-[25vw] " />
+        <div>
+        <p className="text-white pr-8">“Be the change that you wish to see in the world.”</p>
       </div>
+      </div>
+    
 
       <div className="md:pr-32 pb-4  pt-5 md:pt-0 md:pb-0">
         <Form
