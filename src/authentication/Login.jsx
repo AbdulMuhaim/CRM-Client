@@ -86,7 +86,8 @@ function Login() {
           <div className="text-center">
             <h1 className="text-xl">Welcome</h1>
             <p className="pt-2">Login to admin dashboard</p>
-            <p> Username: admin@Kerala</p>
+            <br />
+            <p>  Username: admin@Kerala</p>
             <p> Password: 12345</p>
           </div>
           <Form.Item
